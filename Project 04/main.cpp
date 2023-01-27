@@ -1,9 +1,9 @@
 /**************************************************************************
 * AUTHOR : Janelle Gwynn M. Hamoy                                         *
-* PROJECT #4 : Parallel Arrays							  				  *
-* CLASS : CSC5 															  *
-* SECTION : MW 2:20PM - 5:30PM 											  *
-* DUE DATE : 5/25/22 													  *
+* PROJECT #4 : Parallel Arrays					          *
+* CLASS : CSC5 								  *
+* SECTION : MW 2:20PM - 5:30PM 					 	  *
+* DUE DATE : 5/25/22 							  *
 *************************************************************************/
 
 #include "myheader.h"
@@ -28,15 +28,15 @@ int main()
 	ifstream inFile;	   //INPUT  - Variable used to open input file
 	string searchName;	   //INPUT  - Name of employee user wants to search
 	int    position;	   //INPUT  - Receives the position of employee
-						   //         searched
-	int	   match[SIZE];	   //INPUT  - Holds the subscript of employee
+				   //         searched
+	int    match[SIZE];	   //INPUT  - Holds the subscript of employee
 	int    counter = 0;	   //INPUT  - Counter
 	string name[SIZE];	   //OUTPUT - Holds the names of employees from
-						   //         input file
+				   //         input file
 	int    idNum[SIZE];	   //OUTPUT - Holds the id numbers of employees
-						   //         from input file
+				   //         from input file
 	float  balances[SIZE]; //OUTPUT - Holds the balances of the employees
-						   //         from input file
+			       //         from input file
 
 	//Get file names from user.
 	cout << "What input file would you like to use? ";
