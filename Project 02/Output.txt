@@ -1,0 +1,43 @@
+**************************************************
+* PROGRAMMED BY : Janelle Gwynn M. Hamoy
+* CLASS         : CSC5
+* SECTION       : MW 2:20PM - 5:30PM
+* ASSIGNMENT #2 : Repetition & Switch Statement
+**************************************************
+TEST #1:
+
+        Enter Letter Grade (enter 'X' to exit): A
+        Enter Letter Grade (enter 'X' to exit): b
+        Enter Letter Grade (enter 'X' to exit): A
+        Enter Letter Grade (enter 'X' to exit): d
+        Enter Letter Grade (enter 'X' to exit): c
+        Enter Letter Grade (enter 'X' to exit): F
+        Enter Letter Grade (enter 'X' to exit): A
+        Enter Letter Grade (enter 'X' to exit): X
+
+Total Grade Points: 18
+GPA: 2.57
+
+
+TEST #2:
+
+        Enter Letter Grade (enter 'X' to exit): a
+        Enter Letter Grade (enter 'X' to exit): G
+
+        Invalid Letter grade, please try again
+
+        Enter Letter Grade (enter 'X' to exit): B
+        Enter Letter Grade (enter 'X' to exit): e
+
+        Invalid Letter grade, please try again
+
+        Enter Letter Grade (enter 'X' to exit): C
+        Enter Letter Grade (enter 'X' to exit): x
+
+Total Grade Points: 9
+GPA: 3.00
+
+
+TEST #3:
+
+        Enter Letter Grade (enter 'X' to exit): x
