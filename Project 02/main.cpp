@@ -1,9 +1,9 @@
 /**************************************************************************
 * AUTHOR : Janelle Gwynn M. Hamoy                                         *
-* PROJECT #2 : Repetition & Switch Statement							  *
-* CLASS : CSC5 															  *
-* SECTION : MW 2:20PM - 5:30PM 											  *
-* DUE DATE : 4/4/22 													  *
+* PROJECT #2 : Repetition & Switch Statement			          *
+* CLASS : CSC5 							          *
+* SECTION : MW 2:20PM - 5:30PM 						  *
+* DUE DATE : 4/4/22 	                                                  *
 *************************************************************************/
 
 #include <iostream>
@@ -52,11 +52,11 @@ int main()
 	const int GRADE_F = 0;
 
 	//Variables
-	int    counterLoop;		//INPUT  - Counter for Loop
-	char   letterGrade;		//INPUT  - Letter grade input by user
+	int    counterLoop;	//INPUT  - Counter for Loop
+	char   letterGrade;	//INPUT  - Letter grade input by user
 	float  counterGrade;	//INPUT  - Counter for grade
-	int    totalGPA;		//OUTPUT - Total grade points
-	float  GPA;				//OUTPUT - Grade Point Average
+	int    totalGPA;	//OUTPUT - Total grade points
+	float  GPA;		//OUTPUT - Grade Point Average
 
 	//Initialize Variables
 	totalGPA = 0;
@@ -67,8 +67,8 @@ int main()
 	cout << "**************************************************";
 	cout << "\n* PROGRAMMED BY : Janelle Gwynn M. Hamoy";
 	cout << "\n* CLASS         : CSC5";
-    cout << "\n* SECTION       : MW 2:20PM - 5:30PM";
-    cout << "\n* ASSIGNMENT #2 : Repetition & Switch Statement";
+    	cout << "\n* SECTION       : MW 2:20PM - 5:30PM";
+    	cout << "\n* ASSIGNMENT #2 : Repetition & Switch Statement";
 	cout << "\n**************************************************";
 
 	for (int i = 0; i < 3; i++)
@@ -79,10 +79,10 @@ int main()
 
 		//Initialize Variables
 		totalGPA = 0;
-	    counterGrade = 0;
+	    	counterGrade = 0;
 
 		//Get Input From User and Validate Input
-	    cout << setw(48);
+	    	cout << setw(48);
 		cout << "Enter Letter Grade (enter 'X' to exit): ";
 		cin >> letterGrade;
 
@@ -92,34 +92,35 @@ int main()
 			{
 				case 'a':
 				case 'A':
-						  ++counterGrade;
-						  totalGPA += GRADE_A;;
-						  break;
+					  ++counterGrade;
+					  totalGPA += GRADE_A;;
+					  break;
 				case 'b':
 				case 'B':
-						  ++counterGrade;
-						  totalGPA += GRADE_B;
-						  break;
+					  ++counterGrade;
+					  totalGPA += GRADE_B;
+					  break;
 				case 'c':
 				case 'C':
-						  ++counterGrade;
-						  totalGPA += GRADE_C;;
-						  break;
+					  ++counterGrade;
+					  totalGPA += GRADE_C;;
+					  break;
 				case 'd':
 				case 'D':
-						  ++counterGrade;
-						  totalGPA += GRADE_D;
-						  break;
+					  ++counterGrade;
+					  totalGPA += GRADE_D;
+					  break;
 				case 'f':
 				case 'F':
-						  counterGrade++;
-						  totalGPA += GRADE_F;
-						  break;
+					  counterGrade++;
+					  totalGPA += GRADE_F;
+					  break;
 				default:
-					      cout << setw(37);
-						  cout << endl << "Invalid Letter grade, please ";
-						  cout << "try again" << endl << endl;
+					  cout << setw(37);
+					  cout << endl << "Invalid Letter grade, please ";
+					  cout << "try again" << endl << endl;
 			}
+			
 		//Reread
 		cout << setw(48);
 		cout << "Enter Letter Grade (enter 'X' to exit): ";
