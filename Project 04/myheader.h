@@ -1,9 +1,9 @@
 /**************************************************************************
 * AUTHOR : Janelle Gwynn M. Hamoy                                         *
-* PROJECT #4 : Parallel Arrays							  				  *
-* CLASS : CSC5 															  *
-* SECTION : MW 2:20PM - 5:30PM 											  *
-* DUE DATE : 5/25/22 													  *
+* PROJECT #4 : Parallel Arrays						  *
+* CLASS : CSC5 								  *
+* SECTION : MW 2:20PM - 5:30PM 						  *
+* DUE DATE : 5/25/22 							  *
 *************************************************************************/
 
 #ifndef MYHEADER_H_
@@ -55,7 +55,7 @@ using namespace std;
  ************************************************************************/
 
 void LoadArraysFromFile(ifstream &inFile, string name[], int idNum[],
-						float balances[], const int SIZE);
+			float balances[], const int SIZE);
 
 /**************************************************************************
  * Definition of SearchForMatch
@@ -95,11 +95,11 @@ void PrintHeaderToFile(ofstream &outFile);
  * ______________________________________________________________________
  * INPUT
  * 	totalBalance	: Total balance due from employees
- *	tempPos			: Temporarily holds the subscript with found
- *					  employee position in array
+ *	tempPos		: Temporarily holds the subscript with found
+ *			  employee position in array
  *
  * OUTPUT
- *	average			: The average balance due from employees
+ *	average		: The average balance due from employees
  *
  ************************************************************************/
 
