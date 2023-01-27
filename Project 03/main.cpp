@@ -1,9 +1,9 @@
 /**************************************************************************
 * AUTHOR : Janelle Gwynn M. Hamoy                                         *
-* PROJECT #3 : Functions							  					  *
-* CLASS : CSC5 															  *
-* SECTION : MW 2:20PM - 5:30PM 											  *
-* DUE DATE : 5/9/22 													  *
+* PROJECT #3 : Functions						  *
+* CLASS : CSC5 								  *
+* SECTION : MW 2:20PM - 5:30PM 						  *
+* DUE DATE : 5/9/22 							  *
 *************************************************************************/
 
 #include <iostream>
@@ -125,29 +125,29 @@ using namespace std;
 
 //Function Prototypes
 void GetSalesInfo(int 	&accountNum,
-				  int	&month,
-				  int 	&day,
-				  int 	&year,
-				  char 	&countyCode,
-				  float &salesAmount,
-				  int 	&shippingWeight);
+			int	&month,
+			int 	&day,
+			int 	&year,
+			char 	&countyCode,
+			float &salesAmount,
+			int 	&shippingWeight);
 float CalcDiscount(int 	 month,
-				   float salesAmount);
+	           float salesAmount);
 float CalcSalesTax(char   countyCode,
-				   float  salesAmount,
-				   float  discount,
-				   string &countyName);
+		   float  salesAmount,
+		   float  discount,
+		   string &countyName);
 float CalcShipping(int shippingWeight);
 void OutputInvoice(int    accountNum,
-				   string countyName,
-				   int	  month,
-				   int	  day,
-				   int	  year,
-				   float  salesAmount,
-				   float  discount,
-				   float  countyTax,
-				   float  shippingCost,
-				   float  total);
+		   string countyName,
+		   int	  month,
+		   int	  day,
+		   int	  year,
+		   float  salesAmount,
+		   float  discount,
+		   float  countyTax,
+		   float  shippingCost,
+		   float  total);
 
 /**********************************************************************
 * CONSTANTS
@@ -172,25 +172,25 @@ const float END_YEAR_DISCOUNT = 0.15;
 int main()
 {
 	//Variables
-	int 	accountNum;			//INPUT  - User's Account Number
-	int 	month;				//INPUT  - Numerical Value of Month
-	int 	day;				//INPUT  - Numerical Value of Day
-	int 	year;				//INPUT	 - Numerical Value of Year
-	char 	countyCode;			//INPUT	 - County Code
-	float 	salesAmount;		//INPUT  - Sales Amount Before Tax
-	int 	shippingWeight;		//INPUT  - Shipping Weight
-	string  countyName;			//OUTPUT - String County Name
-	float 	discount;			//OUTPUT - Total Discount
-	float   countyTax;			//OUTPUT - Total County Tax
-	float 	shippingCost;		//OUTPUT - Total Shipping Cost
-	float   total;			    //OUTPUT - Total Due
+	int 	accountNum;	//INPUT  - User's Account Number
+	int 	month;		//INPUT  - Numerical Value of Month
+	int 	day;		//INPUT  - Numerical Value of Day
+	int 	year;		//INPUT	 - Numerical Value of Year
+	char 	countyCode;	//INPUT	 - County Code
+	float 	salesAmount;	//INPUT  - Sales Amount Before Tax
+	int 	shippingWeight;	//INPUT  - Shipping Weight
+	string  countyName;	//OUTPUT - String County Name
+	float 	discount;	//OUTPUT - Total Discount
+	float   countyTax;	//OUTPUT - Total County Tax
+	float 	shippingCost;	//OUTPUT - Total Shipping Cost
+	float   total;		//OUTPUT - Total Due
 
 	//Header
 	cout << "**************************************************";
 	cout << "\n* PROGRAMMED BY : Janelle Gwynn M. Hamoy";
 	cout << "\n* CLASS         : CSC5";
-    cout << "\n* SECTION       : MW 2:20PM - 5:30PM";
-    cout << "\n* PPROJECT #3   : Repetition & Switch Statement";
+    	cout << "\n* SECTION       : MW 2:20PM - 5:30PM";
+    	cout << "\n* PPROJECT #3   : Repetition & Switch Statement";
 	cout << "\n**************************************************";
 	cout << endl;
 
@@ -215,27 +215,27 @@ int main()
 
 		//Call Function OutputInvoice and Output the Invoice
 		OutputInvoice(accountNum, countyName, month, day, year,
-					  salesAmount, discount,  countyTax, shippingCost,
-					  total);
+			      salesAmount, discount,  countyTax, shippingCost,
+			      total);
 	}
 	return 0;
 }
 
 /********************************************************************
- * Definition of GetSalesInfo										*
- * This function will accept variables by reference and ask the		*
- * user for the account number, month, day, year, county code,		*
- * sales amount, and shipping weight. The user input will be saved	*
- * in the variables passed by reference.							*
+ * Definition of GetSalesInfo					    *
+ * This function will accept variables by reference and ask the	    *
+ * user for the account number, month, day, year, county code,	    *
+ * sales amount, and shipping weight. The user input will be saved  *
+ * in the variables passed by reference.			    *
  ******************************************************************/
 
 void GetSalesInfo(int 	&accountNum,
-				  int 	&month,
-				  int 	&day,
-				  int 	&year,
-				  char 	&countyCode,
-				  float &salesAmount,
-				  int 	&shippingWeight)
+			int 	&month,
+			int 	&day,
+			int 	&year,
+			char 	&countyCode,
+			float &salesAmount,
+			int 	&shippingWeight)
 {
 	cout << endl;
 	cout <<"Please Enter your Account Number: ";
@@ -274,11 +274,11 @@ void GetSalesInfo(int 	&accountNum,
 }
 
 /********************************************************************
- * Definition of CalcDiscount										*
- * This function will accept the month and sales amount as an		*
- * argument and compute the appropriate discount. Discount will		*
- * vary based on the month inputed by the user. This function will	*
- * return the computed discount.									*
+ * Definition of CalcDiscount					    *
+ * This function will accept the month and sales amount as an	    *
+ * argument and compute the appropriate discount. Discount will	    *
+ * vary based on the month inputed by the user. This function will  *
+ * return the computed discount.				    *
  ******************************************************************/
 
 float CalcDiscount(int month, float salesAmount)
@@ -297,19 +297,19 @@ float CalcDiscount(int month, float salesAmount)
 }
 
 /********************************************************************
- * Definition of CalcSalesTax										*
- * This function will accept the county code, sales amount,			*
- * discount, as an argument. The county name variable will be 		*
+ * Definition of CalcSalesTax				       	    *
+ * This function will accept the county code, sales amount, 	    *
+ * discount, as an argument. The county name variable will be 	    *
  * passed to this function by reference. This function will compute *
- * the appropriate sales tax based on the county. This function		*
+ * the appropriate sales tax based on the county. This function	    *
  * will also assign the correct county appropriate to the sales tax.*
- * This function will return the computed sales tax.		    	*
+ * This function will return the computed sales tax.		    *
  ******************************************************************/
 
 float CalcSalesTax (char   countyCode,
-					float  salesAmount,
-					float  discount,
-					string &countyName)
+		    float  salesAmount,
+		    float  discount,
+		    string &countyName)
 {
 	//Variables
 	float salesTax;	//Output - Total Sales Tax
@@ -335,21 +335,21 @@ float CalcSalesTax (char   countyCode,
 }
 
 /********************************************************************
- * Definition of CalcShipping										*
- * This function will accept the shipping weight as an argument		*
+ * Definition of CalcShipping					    *
+ * This function will accept the shipping weight as an argument	    *
  * and compute the proper shipping weight. The shipping cost varies *
- * based on the weight. Once the weight has passed the base weight	*
- * each pound past that base weight will be computed accordingly.	*
- * This function will return the calculated shipping costs.			*
+ * based on the weight. Once the weight has passed the base weight  *
+ * each pound past that base weight will be computed accordingly.   *
+ * This function will return the calculated shipping costs.	    *
  ******************************************************************/
 
 float CalcShipping(int shippingWeight)
 {
 	//Variables
-	float baseShipping;		//Input  - Flat Rate for Base Shipping
-	int lowestShipping;		//Input  - Lowest Tier for Shipping Rate
+	float baseShipping;	//Input  - Flat Rate for Base Shipping
+	int lowestShipping;	//Input  - Lowest Tier for Shipping Rate
 	int highestShipping;	//Input  - The Flat Rate for Base Shipping
-	float shippingCost;		//Output - Total Shipping Costs
+	float shippingCost;	//Output - Total Shipping Costs
 
 
 	//Initialize Variables
@@ -378,23 +378,23 @@ float CalcShipping(int shippingWeight)
 }
 
 /********************************************************************
- * Definition of OutputInvoice										*
- * This function will accept the account number, county name, 		*
- * month, day, year, sales amount, discount, county tax, and 		*
- * shipping costs as an argument. This function will then output 	*
- * the invoice to the user.											*
+ * Definition of OutputInvoice					    *
+ * This function will accept the account number, county name, 	    *
+ * month, day, year, sales amount, discount, county tax, and 	    *
+ * shipping costs as an argument. This function will then output    *
+ * the invoice to the user.					    *
  ******************************************************************/
 
 void OutputInvoice(int 	  accountNum,
-				   string countyName,
-				   int 	  month,
-				   int 	  day,
-				   int 	  year,
-				   float  salesAmount,
-				   float  discount,
-				   float  countyTax,
-				   float  shippingCost,
-				   float  total)
+		   string countyName,
+		   int 	  month,
+		   int 	  day,
+		   int 	  year,
+		   float  salesAmount,
+		   float  discount,
+		   float  countyTax,
+		   float  shippingCost,
+		   float  total)
 {
 	cout << "ACCOUNT NUMBER" << setw(33) << "COUNTY" << endl;
 	cout << setw(9) << accountNum << setw(42) << countyName << endl;
