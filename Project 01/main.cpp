@@ -1,9 +1,9 @@
 /**************************************************************************
 * AUTHOR : Janelle Gwynn M. Hamoy                                         *
-* PROJECT #1 : Basic Input / Output										  *
-* CLASS : CSC5 															  *
-* SECTION : MW 2:20PM - 5:30PM 											  *
-* DUE DATE : 3/14/22 													  *
+* PROJECT #1 : Basic Input / Output					  *
+* CLASS : CSC5 							          *
+* SECTION : MW 2:20PM - 5:30PM 						  *
+* DUE DATE : 3/14/22 							  *
 *************************************************************************/
 
 #include <iostream>
